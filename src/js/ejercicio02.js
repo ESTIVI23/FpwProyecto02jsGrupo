@@ -1,22 +1,26 @@
-//importaciones 
-//todas las constantes 
+// importaciones
 import { calcularArea } from "../services/serviciosEjercicios02.js";
 
+// cuerpo del proceso
 
+let base = prompt("Ingrese la base:");
 
-//cuerpo del proceso
-const base = prompt("Ingrese la base:");
-const altura = prompt("Ingrese la altura:");
+while (isNaN(base)) {
+    alert("Ingrese un número, no una letra para la basea");
+    base = prompt("Ingrese la base:");
+}
 
+let altura = prompt("Ingrese la altura:");
 
+while (isNaN(altura)) {
+    alert("Ingrese un número, no una letra para la altura");
+    altura = prompt("Ingrese la altura:");
+}
 
-
+// Calculamos el área
 const resultado = calcularArea(base, altura);
 
 alert(`El área del triángulo es: ${resultado}`);
-
-
-
 
 
 
