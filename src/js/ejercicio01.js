@@ -1,17 +1,22 @@
-import { compararLetras} from "../services/serviciosEjercicios01.js";
+import { compararLetras } from "../services/serviciosEjercicios01.js";
 
+// Primera letra
+let letra1 = prompt("Ingrese la primera letra");
 
+while (!isNaN(letra1)) {
+    alert("Ingrese una letra, no un número");
+    letra1 = prompt("Ingrese la primera letra");
+}
 
-//cuerpo del proceso
+// Segunda letra
+let letra2 = prompt("Ingrese la segunda letra");
 
-const letra1 = prompt("Ingrese la primera letra");
-const letra2 = prompt("Ingrese la segunda letra");
+while (!isNaN(letra2)) {
+    alert("Ingrese una letra, no un número");
+    letra2 = prompt("Ingrese la segunda letra");
+}
 
-//llamamod a la funcion  pasandole las dos variables como argumentos 
-
-compararLetras(letra1, letra2);
-
-
+// Comparar las letras
 const resultado = compararLetras(letra1, letra2);
 
 alert(resultado);
